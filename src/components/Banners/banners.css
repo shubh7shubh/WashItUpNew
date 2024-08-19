@@ -1,0 +1,56 @@
+*::selection {
+  background-color: transparent;
+}
+
+.banner-con {
+  height: auto;
+  width: 85%;
+  align-self: center;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-desk {
+  display: inline;
+}
+
+.banner-mobile {
+  display: none;
+}
+
+.slick-slider {
+  height: 100% !important;
+}
+
+.slick-slider img {
+  height: 80% !important;
+  margin-top: -0.8%;
+  border: 2.5px solid #ffffff;
+  width: 50px;
+  /**border-top-right-radius: 0.8rem;
+  border-top-left-radius: 0.8rem;
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;**/
+  object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+  .banner-desk {
+    display: none;
+  }
+
+  .banner-mobile {
+    display: inline;
+  }
+
+  .banner-con {
+    margin-top: 12%;
+    width: 85%;
+    margin-bottom: 5%;
+    align-self: center;
+    position: relative;
+    overflow: hidden;
+  }
+}

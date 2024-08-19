@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&display=swap");
+
+/**Responsive Css**/
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@keyframes animate-reorder {
+  0% {
+    color: green;
+  }
+  100% {
+    color: green;
+    transform: translate(-5%);
+  }
+}
+
+.reorder-animate {
+  position: absolute;
+  right: 38px;
+  top: 12px;
+  overflow: visible;
+  font-size: 0.8rem;
+  animation: animate-reorder 0.5s infinite alternate;
+}
+
+.reorder-button {
+  position: absolute;
+  right: 8px;
+  top: 10px;
+  height: 25px;
+  width: 25px;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.type-of-wash {
+  position: absolute;
+  background-color: #ffffff;
+  height: 60%;
+  right: 6%;
+  top: 27.5%;
+  padding: 1%;
+  width: 45%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.type-of-head1 {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  font-weight: 700;
+  color: var(--def-color);
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+.type-of-button {
+  position: relative;
+  border-style: solid;
+  border-color: #6759ff;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 22.5%;
+  border-radius: 15px;
+  height: 100%;
+  background-color: #ffffff;
+  color: #6759ff;
+  font-weight: bold;
+}
+
+.type-of-image {
+  position: relative;
+  height: 45%;
+  width: 45%;
+  object-fit: contain;
+}
+.type-of-button1 {
+  position: relative;
+  border-style: solid;
+  border-color: green;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 22.5%;
+  border-radius: 15px;
+  height: 100%;
+  background-color: #ffffff;
+  color: #6759ff;
+  font-weight: bold;
+}
+.type-of-wash-continue {
+  position: relative;
+  width: 80%;
+  background-color: #6759ff;
+  border-radius: 10px;
+  color: #fff;
+  padding: 3%;
+  border-width: 0px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+  margin-bottom: 2.5%;
+  bottom: 2%;
+  cursor: pointer;
+}
+
+.type-of-wash-con1 {
+  position: relative !important;
+  width: 100%;
+  height: 32.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) and (orientation: portrait) {
+  .type-of-wash {
+    position: relative;
+    margin-top: -10%;
+    margin-left: 11.5% !important;
+    margin-bottom: 10%;
+    width: 90% !important;
+  }
+
+  .type-of-head1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    margin-top: -5%;
+  }
+
+  .type-of-wash-con1 {
+    margin-bottom: 20%;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) and (orientation: portrait) {
+  .type-of-wash {
+    width: 50%;
+    right: 3%;
+  }
+
+  .type-of-head1 {
+    font-size: 1.5rem;
+    margin-bottom: 5%;
+  }
+  .type-of-wash-con1 {
+    height: 35% !important;
+  }
+  .type-of-wash-continue {
+    border-radius: 0.3rem;
+    margin-bottom: 1%;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1023px) and (orientation: landscape) {
+  .type-of-wash {
+    top: 15%;
+    right: 2.5%;
+    width: 55%;
+    height: 80%;
+  }
+}
+/**Responsive Css**/
+
+@media screen and (max-height: 700px) and (orientation: portrait) {
+  .type-of-wash {
+    height: 50vh !important;
+  }
+
+  .type-of-head1 {
+    font-size: 1rem;
+  }
+
+  .type-of-wash-con1 {
+    height: 40% !important;
+  }
+
+  .type-of-button {
+    height: 80% !important;
+    width: 31% !important;
+  }
+
+  .type-of-button1 {
+    height: 80% !important;
+    width: 31% !important;
+  }
+
+  .reorder-animate {
+    font-size: 0.6rem !important;
+  }
+
+  .reorder-button {
+    height: 20px !important;
+    width: 20px !important;
+  }
+}
+
+@media screen and (max-width: 320px) and (orientation: portrait) {
+  .type-of-button {
+    height: 80% !important;
+    width: 30% !important;
+  }
+
+  .type-of-button1 {
+    height: 80% !important;
+    width: 30% !important;
+  }
+
+  .reorder-animate {
+    font-size: 0.5rem;
+  }
+}

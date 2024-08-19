@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;900&display=swap");
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.washing-total-con-A {
+  position: absolute;
+  background-color: #ffffff;
+  height: 60%;
+  right: 6%;
+  top: 27.5%;
+  padding: 1%;
+  width: 45%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.washing-note-A {
+  width: 95%;
+  border-style: solid;
+  border-color: #9359ff;
+  border-width: 2px;
+  color: #9359ff;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  font-family: "Poppins", sans-serif;
+  font-size: 1vw;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.washing-anime-A {
+  width: 50%;
+  margin-top: 4%;
+  margin-right: 9%;
+}
+
+.go-back-button-A {
+  font-size: 0.8rem;
+  color: #6759ff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .washing-total-con-A {
+    height: 45vh;
+    width: 90%;
+    position: relative;
+    margin-top: 10%;
+    margin-left: 11.5% !important;
+    margin-bottom: 10%;
+  }
+
+  .washing-note-A {
+    font-size: 0.8rem;
+  }
+
+  .washing-anime-A {
+    width: 60%;
+  }
+
+  .go-back-button-A {
+    font-size: 0.8rem;
+    color: #6759ff;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .washing-total-con {
+    position: absolute;
+    width: 43vw;
+    height: 65vh;
+    margin-left: 50%;
+    margin-top: 13%;
+    background: #ffffff;
+    border-radius: 15px;
+    z-index: 1;
+    overflow: hidden;
+    padding-left: 3%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    padding-right: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .washing-anime {
+    width: 70%;
+    margin-top: 8%;
+    margin-right: 9%;
+  }
+
+  .washing-para {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 5vh;
+    color: #2b8dfc;
+    font-weight: bold;
+    margin-top: 3%;
+  }
+
+  .washing-loader {
+    position: absolute;
+    height: 15%;
+    top: 80%;
+    left: 60%;
+  }
+
+  .washing-note {
+    width: 95%;
+    border-style: solid;
+    border-color: #9359ff;
+    border-width: 2px;
+    color: #9359ff;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    text-align: center;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .washing-total-con {
+    position: relative;
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5.5%;
+    background: #ffffff;
+    border-radius: 15px;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    display: flex;
+    overflow: hidden;
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 8%;
+    padding-bottom: 20%;
+    flex-wrap: wrap;
+  }
+  .washing-anime {
+    width: 70%;
+    height: 30%;
+    margin-top: 15%;
+    margin-left: -10%;
+    margin-bottom: -5%;
+  }
+
+  .washing-para {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 2.8vh;
+    color: #2b8dfc;
+    font-weight: bold;
+    margin-top: 40%;
+    margin-right: 20vw;
+    width: 20%;
+  }
+
+  .washing-loader {
+    position: absolute;
+    height: 15%;
+    top: 61%;
+    left: 77%;
+  }
+
+  .washing-note {
+    height: 20%;
+    width: 100%;
+    border-style: solid;
+    border-color: #9359ff;
+    border-width: 2px;
+    color: #9359ff;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5vw;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 5%;
+  }
+}

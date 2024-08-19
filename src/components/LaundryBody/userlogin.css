@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color: transparent;
+}
+
+.nine-one {
+  height: 55%;
+}
+
+@media screen and (max-width: 600px) {
+  .nine-one {
+    height: 67%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .login-logo3 {
+    display: none;
+  }
+  .vendorlogincon {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+  }
+
+  .vendor-card1 {
+    height: 100%;
+    width: 50vw;
+    background-color: #6759ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation: opacity 2s ease-in-out;
+  }
+
+  .vendor-card2 {
+    height: 100%;
+    width: 50vw;
+    background-color: #ffffff;
+    font-family: "Instrument Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .vendor-login-logo-card {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: -10%;
+  }
+
+  .login-head {
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 2.2vw;
+    font-weight: 900;
+    color: #6759ff;
+    animation: moveright 2s ease-in-out;
+  }
+
+  .login-text {
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 1vw;
+    font-weight: 500;
+    color: gray;
+    animation: moveup 2s ease-in-out;
+  }
+  .login-box {
+    height: auto;
+    font-family: "Instrument Sans", sans-serif;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-para {
+    font-family: "Instrument Sans", sans-serif;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 1vw;
+    margin-top: 5%;
+    animation: moveright 2s ease-in-out;
+  }
+
+  .login-input {
+    font-size: 1vw;
+    height: 5.5vh;
+    width: 100%;
+    animation: moveleft 2s ease-in-out;
+    padding-left: 3%;
+    margin-top: 5%;
+  }
+
+  .login-input::placeholder {
+    color: #000000;
+  }
+
+  .button-login {
+    border: solid 2px #6759ff;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #6759ff;
+    margin-top: 10%;
+    align-self: center;
+    font-size: 1.5vw;
+    animation: moveright 2s ease-in-out;
+    width: 100%;
+    padding: 2% 3%;
+  }
+
+  .washing-gif {
+    height: 40%;
+    width: 40%;
+    filter: contrast(1);
+    filter: blur(1);
+    animation: moveright 3s ease-in-out;
+  }
+  .vendorlogo {
+    height: 10%;
+    width: 45%;
+    margin-bottom: 10%;
+    margin-right: 5%;
+    filter: drop-shadow(7px 5px 2px #00000050);
+    animation: moveleft 2s ease-in-out;
+  }
+  .social-con {
+    width: 20vw;
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .social-icons {
+    color: #6759ff;
+    font-size: 2vw;
+    animation: moveup 2s ease-in-out;
+  }
+  .login-input2 {
+    color: #6759ff;
+    font-size: 1.7vw;
+    font-family: "Instrument Sans", sans-serif;
+    width: 50%;
+    animation: opacity 2s ease-in-out;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 20%;
+  }
+  .messageanimation {
+    height: 50%;
+    width: 60%;
+  }
+  .washingloader {
+    height: 40%;
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .login-logo3 {
+    display: inline;
+    height: 28%;
+    width: 80%;
+    margin-bottom: 15%;
+    margin-top: -35%;
+    animation: movedown 2s ease-in-out;
+  }
+  .vendor-card1 {
+    display: none;
+    align-self: center;
+  }
+  .vendor-card2 {
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff;
+    font-family: "Instrument Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .vendor-login-logo-card {
+    width: 85%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .login-head {
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 10vw;
+    font-weight: 900;
+    color: #6759ff;
+    text-align: center;
+    animation: moveright 2s ease-in-out;
+  }
+
+  .login-text {
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 3vw;
+    font-weight: 500;
+    text-align: center;
+    color: gray;
+    animation: moveup 2s ease-in-out;
+    margin-bottom: 8%;
+  }
+  .login-box {
+    height: auto;
+    font-family: "Instrument Sans", sans-serif;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-para {
+    font-family: "Instrument Sans", sans-serif;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 4vw;
+    margin-top: 5%;
+    animation: moveright 2s ease-in-out;
+  }
+
+  .login-input {
+    height: auto;
+    border-color: #6759ff80;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    animation: moveleft 2s ease-in-out;
+    margin-bottom: 8%;
+    padding: 4% 2%;
+    margin-top: 5%;
+  }
+
+  .button-login {
+    border: solid 2px #6759ff;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #6759ff;
+    margin-top: 10%;
+    align-self: center;
+    font-size: 6.5vw;
+    animation: moveright 2s ease-in-out;
+    margin-bottom: 10%;
+    width: 100%;
+    padding: 2% 3%;
+  }
+
+  .washing-gif {
+    height: 40%;
+    width: 40%;
+    filter: contrast(1);
+    filter: blur(1);
+    animation: moveright 2s ease-in-out;
+  }
+
+  .social-con {
+    margin-top: 10%;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .social-icons {
+    color: #6759ff;
+    font-size: 10vw;
+    animation: moveup 2s ease-in-out;
+  }
+  .login-input2 {
+    color: #6759ff;
+    font-size: 6vw;
+    font-family: "Instrument Sans", sans-serif;
+    width: 50%;
+    align-self: center;
+    animation: opacity 2s ease-in-out;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .messageanimation {
+    margin-top: -35%;
+    height: 40%;
+    width: 100%;
+  }
+
+  .washingloader {
+    height: 20%;
+    width: 38%;
+  }
+}

@@ -1,0 +1,1025 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&display=swap");
+
+@keyframes tabshideAnimation {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes tabsshowAnimation {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+.show {
+  animation: tabsshowAnimation linear 0.5s;
+}
+
+.hide {
+  animation: tabshideAnimation linear 0.5s;
+}
+
+.hide1 {
+  left: -100%;
+}
+
+.show1 {
+  left: 0%;
+}
+
+.my-profile-container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.my-profile-container h1 {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  top: 0%;
+  left: 10%;
+  z-index: 2;
+  font-weight: 500;
+}
+
+.star1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35%;
+  z-index: -1;
+}
+
+.star2 {
+  position: absolute;
+  top: 12%;
+  left: 18%;
+  width: 10%;
+  z-index: -1;
+}
+
+.profile-modal-box {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  height: 80%;
+  width: 80%;
+  left: 10%;
+  box-shadow: 1px 1px 5px #222222;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.profile-tabs {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-tabs div:first-child {
+  width: 80%;
+  position: relative;
+  top: 5%;
+  padding: 1%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 0.5rem;
+  background-color: #80808030;
+}
+
+.profile-tabs div:first-child h2 {
+  font-family: "Poppins", sans-serif;
+  color: #22222290;
+}
+
+.profile-tabs div:first-child > img {
+  width: 20%;
+}
+
+.profile-tabs div:last-child {
+  border: 2px solid transparent;
+}
+.tabs {
+  height: 80%;
+  width: 80%;
+}
+
+.not-selected {
+  font-family: "Poppins", sans-serif;
+  padding-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: #222222;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.8rem;
+  border: 8px solid transparent;
+  border-top: 0;
+  border-left: 0;
+  border-bottom: 0;
+}
+
+.selected img {
+  width: 20%;
+}
+
+.not-selected img {
+  width: 20%;
+}
+
+.not-selected:hover {
+  border: 8px solid #6759ff;
+  border-top: 0;
+  border-left: 0;
+  border-bottom: 0;
+  background-color: #80808030;
+}
+.selected {
+  font-family: "Poppins", sans-serif;
+  padding-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 8px solid #6759ff;
+  border-top: 0;
+  border-left: 0;
+  border-bottom: 0;
+  background-color: #80808030;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.tabs p:active {
+  border: 8px solid #6759ff;
+  border-top: 0;
+  border-left: 0;
+  border-bottom: 0;
+  background-color: #80808030;
+}
+
+.log-out {
+  margin-left: 18%;
+  font-family: "Poppins", sans-serif;
+  border: 0;
+  background-color: #6759ff;
+  color: #ffffff;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  border: 1px solid #6759ff;
+  padding: 2% 8%;
+  font-size: 0.8rem;
+}
+
+.log-out:hover {
+  color: #6759ff;
+  background-color: #ffffff;
+}
+.log-out:active {
+  color: #6759ff;
+  background-color: #ffffff;
+}
+
+.profile-details {
+  height: 100%;
+  width: 80%;
+  padding: 5%;
+}
+
+.detials-profile {
+  height: 100%;
+  width: 100%;
+}
+
+.detials-profile {
+  height: 100%;
+  width: 100%;
+}
+
+.detials-profile > div {
+  width: 30%;
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  position: relative;
+  height: 10%;
+}
+
+.detials-profile > div > img {
+  position: absolute;
+  width: 7%;
+  margin: 0;
+  left: 19.5%;
+}
+
+.detials-profile > div > input {
+  font-size: 0.8rem;
+  width: 80%;
+  margin-left: 15%;
+  height: 100%;
+  padding-left: 10%;
+}
+
+.detials-profile button {
+  margin-left: 30%;
+  margin-top: 5%;
+  border: 1px solid #6759ff;
+  background-color: #6759ff;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  padding: 0% 2%;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.detials-profile button:hover {
+  background-color: #ffffff;
+  color: #6759ff;
+}
+
+.detials-profile button:active {
+  background-color: #ffffff;
+  color: #6759ff;
+}
+
+.address-profile {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 1%;
+}
+
+.address-profile > button {
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  background-color: #6759ff;
+  border: 0;
+  color: #ffffff;
+  padding: 0.6% 1.1%;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.addAddress-Modal > button {
+  position: absolute;
+  bottom: 6%;
+  right: 5%;
+  background-color: #6759ff;
+  border: 0;
+  color: #ffffff;
+  font-size: 0.8rem;
+  padding: 0.8% 1.5%;
+  border-radius: 0.3rem;
+  cursor: pointer !important;
+}
+
+.address-subsection {
+  font-family: "Poppins", sans-serif;
+  height: 62%;
+  width: 35%;
+  position: relative;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 8px #222222;
+  padding: 2%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+
+.address-subsection input {
+  width: 85%;
+}
+
+.address-subsection > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.address-subsection > div > img {
+  width: 8%;
+  margin-bottom: 3%;
+  align-self: center;
+}
+
+.address-subsection h5 {
+  margin: 2.5% 0%;
+  font-size: 0.7rem;
+}
+
+.address-subsection > div > div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.address-subsection > div > div button {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 5%;
+}
+
+.address-subsection > div > div button:first-child {
+  color: red;
+  border: 1px solid red;
+  background-color: rgb(255, 213, 213);
+  border-radius: 0.25rem;
+}
+
+.address-subsection > div > div button:first-child:hover {
+  color: #ffffff;
+  border: 1px solid red;
+  background-color: red;
+  border-radius: 0.25rem;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.address-subsection > div > div button:first-child:active {
+  color: #ffffff;
+  border: 1px solid red;
+  background-color: red;
+  border-radius: 0.25rem;
+}
+
+.address-subsection > div > div button:last-child {
+  color: #ffffff;
+  border: 1px solid #6759ff;
+  background-color: #6759ff;
+  border-radius: 0.25rem;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.address-subsection > div > div button:last-child:hover {
+  color: #6759ff;
+  border: 1px solid #6759ff;
+  background-color: #6759ff50;
+  border-radius: 0.25rem;
+}
+
+.refer-details {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.refer-details > div {
+  height: 30%;
+  width: 35%;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 8px #222222;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.refer-details > div > div:first-child {
+  height: 100%;
+  width: 30%;
+  background-color: #6759ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.refer-details > div > div:first-child img {
+  width: 80%;
+}
+
+.refer-details > div > div:last-child {
+  height: 100%;
+  width: 70%;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-left: 2%;
+}
+
+.refer-details > div > div:last-child h3 {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: #6759ff;
+}
+
+.refer-details > div > div:last-child p {
+  font-size: 0.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.refer-details > div > div:last-child button {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  border: 1px solid #6759ff;
+  background-color: #6759ff;
+  color: #ffffff;
+  border-radius: 0.2rem;
+  padding: 1% 5%;
+  cursor: pointer;
+}
+
+.refer-details > div > div:last-child button:hover {
+  background-color: #ffffff;
+  color: #6759ff;
+}
+
+.addAddress-Modal {
+  position: absolute;
+  background-color: #ffffff;
+  z-index: 5;
+  height: 70%;
+  width: 30%;
+  left: 35%;
+  top: 10%;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 5px #222222;
+  padding: 1.5%;
+}
+
+.addAddress-Modal > form {
+  height: 90%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.addAddress-Modal > form label {
+  width: 100%;
+}
+
+.addAddress-Modal > form > input {
+  padding: 2%;
+}
+
+.addAddress-Modal > form > button {
+  border: 1px solid #222222;
+  background-color: #6759ff;
+  color: #ffffff;
+  padding: 1% 3%;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+
+.address-alert {
+  position: absolute;
+  background-color: #ffffff;
+  z-index: 2;
+  box-shadow: 1px 1px 5px #222222;
+  padding: 1%;
+  height: auto;
+  width: auto;
+  left: 35%;
+  top: 35%;
+  border-radius: 0.3rem;
+}
+
+.address-alert h6 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 5%;
+}
+
+.address-alert > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.address-alert > div button:first-child {
+  color: #6759ff;
+  border: 1.5px solid #6759ff;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.address-alert > div button:first-child:hover {
+  color: #ffffff;
+  border: 1.5px solid #6759ff;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  background-color: #6759ff;
+}
+
+.address-alert > div button:last-child {
+  color: #ffffff;
+  border: 1.5px solid red;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  background-color: red;
+}
+
+.address-alert > div button:last-child:hover {
+  color: red;
+  border: 1.5px solid red;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.profile-tabs1 {
+  display: none;
+}
+
+.tabs-arrow2 {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .address-profile {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  .address-subsection {
+    margin: 5% !important;
+  }
+
+  .addAddress-Modal {
+    width: 90% !important;
+    left: 5% !important;
+  }
+
+  .tabs-arrow1 {
+    font-size: 1rem;
+    top: 0.5%;
+    right: 5%;
+    position: absolute;
+    transform: rotate(-180deg);
+  }
+
+  .tabs-arrow2 {
+    display: inline;
+    font-size: 1rem;
+    top: 0.5%;
+    left: 5%;
+    position: absolute;
+  }
+
+  .profile-modal-box {
+    overflow: hidden;
+  }
+
+  .profile-tabs {
+    display: none;
+  }
+
+  .profile-tabs1 {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 10;
+    box-shadow: 1px 1px 6px #222222;
+  }
+
+  .profile-tabs1 div:first-child {
+    width: 80%;
+    position: relative;
+    top: 5%;
+    padding: 1%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0.5rem;
+    background-color: #80808030;
+  }
+
+  .profile-tabs1 div:first-child h2 {
+    font-family: "Poppins", sans-serif;
+    color: #22222290;
+  }
+
+  .profile-tabs1 div:first-child > img {
+    width: 20%;
+  }
+
+  .profile-tabs1 div:last-child {
+    border: 2px solid transparent;
+  }
+
+  .tabs {
+    width: 85% !important;
+  }
+
+  .profile-details {
+    height: 100% !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 10% !important;
+  }
+
+  .address-subsection {
+    height: 28vh !important;
+    width: 90% !important;
+    margin: 0%;
+  }
+
+  .address-profile > button {
+    top: 1.7%;
+    font-size: 0.7rem;
+    padding: 2% 4%;
+  }
+
+  .addAddress-Modal {
+    height: 50%;
+    width: 80%;
+    top: 25%;
+    left: 10%;
+    padding: 5%;
+  }
+
+  .addAddress-Modal > form label {
+    font-size: 0.8rem;
+  }
+
+  .addAddress-Modal > form > button {
+    font-size: 0.7rem;
+    padding: 2% 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .address-subsection input {
+    font-size: 1rem !important;
+    border: 1px solid black;
+    border-radius: 0.2rem;
+    margin-left: 1%;
+  }
+
+  .addAddress-Modal > button {
+    bottom: 7%;
+    font-size: 0.7rem;
+    padding: 2% 4%;
+  }
+
+  .refer-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  .refer-details > div {
+    margin: 3% 0% !important;
+  }
+
+  .refer-details > div > div:last-child button {
+    font-size: 0.8rem !important;
+  }
+
+  .refer-details > div > div:last-child p {
+    font-size: 0.8rem !important;
+  }
+}
+
+@media screen and (max-width: 1025px) and (orientation: portrait) {
+  .detials-profile > div {
+    height: 6%;
+    width: 50%;
+  }
+
+  .detials-profile > div input {
+    border: 1px solid #222222;
+    padding-left: 11%;
+  }
+
+  .detials-profile button {
+    margin-left: 40%;
+  }
+
+  .profile-tabs {
+    width: 30%;
+    justify-content: space-around;
+  }
+  .tabs {
+    width: 100%;
+  }
+  .not-selected {
+    font-size: 1rem;
+  }
+  .not-selected img {
+    width: 25%;
+  }
+
+  .selected img {
+    width: 25%;
+  }
+
+  .selected {
+    font-size: 1rem;
+  }
+
+  .log-out {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1365px) and (orientation: landscape) {
+  .detials-profile > div {
+    height: 5%;
+  }
+
+  .detials-profile > div input {
+    border: 1px solid #222222;
+    padding-left: 11%;
+  }
+
+  .address-subsection {
+    height: 35%;
+  }
+
+  .not-selected {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .profile-tabs {
+    justify-content: space-around;
+  }
+
+  .selected {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .addAddress-Modal {
+    top: 25%;
+    height: 45%;
+  }
+
+  .refer-details > div {
+    height: 25%;
+    width: 45%;
+    margin: 0;
+    align-self: flex-start;
+  }
+  .refer-details > div > div:last-child p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1367px) and (orientation: portrait) {
+  .detials-profile > div {
+    height: 3%;
+  }
+
+  .detials-profile > div input {
+    border: 1px solid #222222;
+    padding-left: 11%;
+  }
+
+  .address-profile {
+    padding-top: 3%;
+  }
+  .address-subsection {
+    height: 20%;
+    width: 40%;
+  }
+
+  .addAddress-Modal {
+    top: 30%;
+    height: 30%;
+    width: 40%;
+  }
+
+  .profile-tabs {
+    width: 35%;
+    justify-content: flex-start;
+  }
+
+  .tabs {
+    margin-top: 25%;
+    height: 50%;
+  }
+
+  .address-profile {
+    padding: 0%;
+    height: 95%;
+    margin-top: 5%;
+  }
+
+  .refer-details > div {
+    height: 20%;
+    width: 100%;
+    margin: 0;
+    align-self: flex-start;
+  }
+
+  .refer-details > div > div:last-child h3 {
+    font-size: 1.5rem;
+  }
+
+  .refer-details > div > div:last-child button {
+    font-size: 1.2rem;
+  }
+
+  .refer-details > div > div:last-child p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .addAddress-Modal {
+    height: 50%;
+    width: 50%;
+    top: 20%;
+    left: 25%;
+  }
+
+  .addAddress-Modal > form > input {
+    border: 2px solid #22222250;
+  }
+
+  .addAddress-Modal > button {
+    bottom: 3%;
+    padding: 1% 3%;
+    font-size: 0.9rem;
+  }
+
+  .detials-profile > div {
+    height: 6%;
+  }
+
+  .detials-profile > div input {
+    border: 1px solid #222222;
+    padding-left: 11%;
+  }
+
+  .address-subsection {
+    height: 45%;
+    width: 45%;
+    padding: 3%;
+  }
+  .profile-tabs {
+    justify-content: flex-start;
+  }
+  .tabs {
+    width: 100%;
+    margin-top: 25%;
+    height: 50%;
+  }
+
+  .refer-details > div {
+    height: 25%;
+    width: 45%;
+  }
+
+  .refer-details > div > div:last-child p {
+    font-size: 0.65rem;
+  }
+}
+
+@media screen and (max-width: 1023px) and (orientation: portrait) {
+  .addAddress-Modal {
+    height: 50%;
+    width: 50%;
+    top: 20%;
+    left: 25%;
+  }
+
+  .addAddress-Modal > form > input {
+    border: 2px solid #22222250;
+  }
+
+  .addAddress-Modal > button {
+    bottom: 7%;
+  }
+
+  .detials-profile > div {
+    height: 6%;
+    width: 50%;
+  }
+
+  .detials-profile > div input {
+    border: 1px solid #222222;
+    padding-left: 11%;
+  }
+
+  .detials-profile button {
+    margin-left: 40%;
+  }
+
+  .profile-tabs {
+    justify-content: flex-start;
+    width: 30%;
+  }
+  .not-selected {
+    font-size: 0.8rem;
+  }
+
+  .selected {
+    font-size: 0.8rem;
+  }
+  .address-profile {
+    margin-top: 5%;
+  }
+
+  .address-subsection {
+    height: 25%;
+    width: 45%;
+  }
+
+  .address-subsection input {
+    font-size: 0.6rem;
+  }
+
+  .tabs {
+    height: 50%;
+    margin-top: 25%;
+  }
+
+  .profile-details {
+    height: 95%;
+    padding: 1%;
+    padding-top: 5%;
+  }
+
+  .log-out {
+    font-size: 0.7rem;
+  }
+
+  .refer-details > div {
+    height: 20%;
+    width: 90%;
+    margin: 0;
+    align-self: flex-start;
+  }
+
+  .refer-details > div > div:last-child h3 {
+    font-size: 1.2rem;
+  }
+
+  .refer-details > div > div:last-child button {
+    font-size: 1rem;
+  }
+
+  .refer-details > div > div:last-child p {
+    font-size: 1rem;
+  }
+}
